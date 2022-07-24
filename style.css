@@ -10,36 +10,34 @@
 }
 
 body {
-  font-family: Monospace;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: 0;
 }
 
 header {
-  padding-top:30px;
-  padding-left:30px;
+  padding:60px;
   text-align:left;
   background:var(--dark);
   color:var(--tan);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 250%;
+  font-size: 300%;
 }
+
+/*Navigation Links */
 
 nav ul {
   display:flex;
-  background-color:var(--dark);
-  justify-content:end;
-  text-align:right;
-  margin-top:80px;
-  padding-bottom:20px;
-  min-width:300px;
+  justify-content:space-around;
+  padding-top:50px;
+  min-width:5px;
   font-family:monospace;
+  font-size:75%;
   }
 
 nav a {
   color:var(--tan);
-  font-weight:100;
+  font-weight:normal;
   text-decoration:none;
-  padding:30px;
 }
 
 nav a:hover {
@@ -53,11 +51,19 @@ main {
   margin-top:0%;
 }
 
+/* Sets properties of images */
+
+.card header {
+  padding: 0px;
+  background: #13293d;
+  color: #fff;
+}
+
 .card img {
-  width: 100%;
+  width: 25%;
   min-width: 400px;
-  display:inline-flex;
-  flex-direction:row;
+  display:flex;
+  flex-direction: row;
   flex-wrap:wrap;
 }
 
@@ -71,75 +77,99 @@ main {
   justify-content: space-evenly;
 }
 
-
-/* Image Placeholders */
 .content {
   display:flex;
-  justify-content:space-between;
-  flex: 1 1 0;
+  justify-content:start;
   flex-wrap:wrap;
-  flex-direction:row;
-  background-color:var(--aliceblue);
-  color: var(--dark);
-  font-size: 100%;
-  line-height:1.5em;
-  width:100%;
-  padding: 10px;
-  height:200px;
+  padding-top:30px;
+  line-height: 30px;
 }
 
-.image {
-  display:block;
-  width:50%;
-  height:5%;
-  line-height: 5%;
-}
-
+/*Spaces the contact me section*/
 .contact {
-  display:block;
+  display:flex;
+  justify-content:end;
+  flex-wrap:wrap;
   background-color:var(--light);
   color:var(--dark);
-  list-style:circle;
-  width:100%;
-  font-family:'Courier New', Courier, monospace;
-}
-
-label {
-  display: block;
+  padding:20 20;
+  line-height:30px;
 }
 
 footer {
-  display:block;
-  padding: 20px;
-  text-align: center;
-  background: #13293d;
-  color:var(--tan);
-
+  padding:20px;
+  text-align:center;
+  background:var(--dark);
+  color:var(--light);
 }
 
-/* When using 'max-width' as the breakpoint, you must go from widest to narrowest to avoid conflict */
-
-/* Tablets - header changes color */
-@media screen and (max-width:992px) {
+/* Sets Responsiveness for tablets */
+@media screen and (max-width: 992px) {
   header {
-    background: #772014;
+   flex:30%;
+   
   }
   nav ul {
-    background-color:var(--red);
+    flex-direction:row;
+  }
+
+  .card {
+    flex:30%;
+  }
+
+  .content {
+    flex-flow:wrap;
+    word-wrap: normal;
+    width:10%;
+  }
+
+  .contact {
+    justify-content:left;
   }
 }
 
-/* Large smartphones - navbar changes color */
-@media screen and (max-width:768px) {
-  nav {
-    background-color: #bb8588;
+/* Sets responsiveness for large smartphones */
+@media screen and (max-width: 768px) {
+  header {
+    width:1100px;
+  }
+
+  nav ul {
+    flex-direction:column;
+  }
+
+  footer {
+    width:200%;
+    text-align:left;
   }
 }
+/* Sets resposiveness for small smartphones */
+@media screen and (max-width: 576px) {
+  header {
+    width:200%;
+  }
+  
+  h2 {
+    text-align:left;
+  }
+  .card {
+    width:500%;
+    flex-direction:row;
+    padding-right:105px;
+    padding-top:50px;
+  }
 
+  .content {
+    width:80%;
+    padding:45px;
+  }
 
-/* Small smartphones - image placeholders change color */
-@media screen and (max-width:576px) {
-  .sample-img {
-    background-color: #8ac4ff;
+  .contact {
+    width:100%;
+    padding:45px;
+  }
+
+  footer {
+    width:300%;
   }
 }
