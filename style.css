@@ -10,73 +10,54 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: Monospace;
   margin: 0;
 }
 
 header {
-  padding:60px;
-  text-align:center;
-  background:#13293d;
-  color: #fff;
+  padding-top:30px;
+  padding-left:30px;
+  text-align:left;
+  background:var(--dark);
+  color:var(--tan);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 300%;
+  font-size: 250%;
 }
 
 nav ul {
   display:flex;
-  background-color:#d8a47f;
-  justify-content:space-around;
-  padding:20px;
+  background-color:var(--dark);
+  justify-content:end;
+  text-align:right;
+  margin-top:80px;
+  padding-bottom:20px;
   min-width:300px;
   font-family:monospace;
   }
 
 nav a {
-  color:aliceblue;
-  font-weight:bold;
+  color:var(--tan);
+  font-weight:100;
   text-decoration:none;
+  padding:30px;
 }
 
 nav a:hover {
-  color: darkblue;
+  color:var(--light);
 }
 
 main {
   display:flex;
   /* Forces elements to the next line if they don't fit */
   flex-wrap:wrap;
-  margin-top:2%;
-}
-
-/* Image Placeholders */
-.content {
-  display:flex;
-  justify-content: space-between;
-  flex: 1 1 0;
-  flex-wrap:wrap;
-  flex-direction:row;
-  background-color: var(--red);
-  color: var(--tan);
-  font-family:
-
-  width:100%;
-  padding: 10px;
-  height:200px;
-  border:0px solid #000;
-}
-
-.card header {
-  padding: 0px;
-  background: #13293d;
-  color: #fff;
+  margin-top:0%;
 }
 
 .card img {
-  width: 25%;
+  width: 100%;
   min-width: 400px;
-  display:flex;
-  flex-direction: row;
+  display:inline-flex;
+  flex-direction:row;
   flex-wrap:wrap;
 }
 
@@ -90,19 +71,50 @@ main {
   justify-content: space-evenly;
 }
 
-.contact {
+
+/* Image Placeholders */
+.content {
   display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color:var(--dark);
-  color:aliceblue;
+  justify-content:space-between;
+  flex: 1 1 0;
+  flex-wrap:wrap;
+  flex-direction:row;
+  background-color:var(--aliceblue);
+  color: var(--dark);
+  font-size: 100%;
+  line-height:1.5em;
+  width:100%;
+  padding: 10px;
+  height:200px;
+}
+
+.image {
+  display:block;
+  width:50%;
+  height:5%;
+  line-height: 5%;
+}
+
+.contact {
+  display:block;
+  background-color:var(--light);
+  color:var(--dark);
+  list-style:circle;
+  width:100%;
+  font-family:'Courier New', Courier, monospace;
+}
+
+label {
+  display: block;
 }
 
 footer {
+  display:block;
   padding: 20px;
   text-align: center;
   background: #13293d;
-  color: #fff;
+  color:var(--tan);
+
 }
 
 /* When using 'max-width' as the breakpoint, you must go from widest to narrowest to avoid conflict */
@@ -111,6 +123,9 @@ footer {
 @media screen and (max-width:992px) {
   header {
     background: #772014;
+  }
+  nav ul {
+    background-color:var(--red);
   }
 }
 
