@@ -11,7 +11,7 @@
 
 body {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin: 0;
+  margin:0px;
 }
 
 header {
@@ -49,53 +49,59 @@ main {
   /* Forces elements to the next line if they don't fit */
   flex-wrap:wrap;
   margin-top:0%;
+  background-color:var(--light);
 }
 
 /* Sets properties of images */
 
 .card header {
-  padding: 0px;
-  background: #13293d;
-  color: #fff;
+  padding:5px;
+  background:var(--dark);
+  color:var(--light);
 }
 
 .card img {
-  width: 25%;
-  min-width: 400px;
+  width:25%;
+  min-width:400px;
   display:flex;
-  flex-direction: row;
+  flex-direction:row;
   flex-wrap:wrap;
 }
 
 .card {
-  flex: 25%;
-  background-color: var(--light);
-  padding: 10px;
+  flex:25%;
+  padding:10px;
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
   justify-content:space-evenly;
 }
-
+/* Sets properties of about me section */
 .content {
   display:flex;
   justify-content:start;
   flex-wrap:wrap;
   padding-top:30px;
-  line-height: 30px;
+  line-height:30px;
+  padding:0px;
 }
 
-/*Spaces the contact me section*/
+.content img {
+  border-radius:15px;
+}
+
+/* Spaces the contact me section */
 .contact {
   display:flex;
   justify-content:end;
   flex-wrap:wrap;
   background-color:var(--light);
   color:var(--dark);
-  padding:20 20;
+  padding:20px 20px;
   line-height:30px;
 }
 
+/* Sets properties for footer */
 footer {
   padding:20px;
   text-align:center;
@@ -105,33 +111,22 @@ footer {
 
 /* Sets Responsiveness for tablets */
 @media screen and (max-width: 992px) {
-  header {
-   flex:30%;
-   
-  }
-  nav ul {
-    flex-direction:row;
-  }
-
-  .card {
-    flex:30%;
-  }
-
   .content {
-    flex-flow:wrap;
-    word-wrap: normal;
-    width:10%;
-  }
-
-  .contact {
-    justify-content:left;
+    width:80%;
+    padding:45px;
   }
 }
-
 /* Sets responsiveness for large smartphones */
 @media screen and (max-width: 768px) {
+ 
+  /* Extends header to full width of page */
   header {
-    width:1100px;
+    width:200%;
+  }
+
+  /* Eliminates white space on right side of screen */
+  body {
+    background:var(--light); 
   }
 
   nav ul {
@@ -143,33 +138,38 @@ footer {
     text-align:left;
   }
 }
+
 /* Sets resposiveness for small smartphones */
 @media screen and (max-width: 576px) {
   header {
-    width:200%;
+    width:350%;
   }
-  
+
+  body{
+    /* Eliminates white space on right side of screen */
+    background:var(--light); 
+  }
+
   h2 {
     text-align:left;
   }
   .card {
-    width:500%;
+    width:750px;
     flex-direction:row;
+    justify-content:center;
     padding-right:105px;
-    padding-top:50px;
+    margin-right:0px;
+    margin-left:0px;
+    padding-top:45px;
+    background-color:var(--light);
   }
 
-  .content {
-    width:80%;
-    padding:45px;
-  }
-
-  .contact {
+  .content .contact {
     width:100%;
     padding:45px;
   }
 
   footer {
-    width:300%;
+    width:350%;
   }
 }
