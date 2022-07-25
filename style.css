@@ -76,6 +76,20 @@ main {
   flex-wrap:wrap;
   justify-content:space-evenly;
 }
+/* Container holding the image */
+.container {
+  position:relative;
+  text-align:center;
+  color:white;
+}
+/* Centered Text in container */
+.centered {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
 /* Sets properties of about me section */
 .content {
   display:flex;
@@ -83,22 +97,26 @@ main {
   flex-wrap:wrap;
   padding-top:30px;
   line-height:30px;
-  padding:0px;
+  padding:20px;
 }
 
 .content img {
   border-radius:15px;
+  justify-content:center;
 }
 
 /* Spaces the contact me section */
 .contact {
   display:flex;
-  justify-content:end;
+  justify-content:start;
   flex-wrap:wrap;
-  background-color:var(--light);
-  color:var(--dark);
-  padding:20px 20px;
-  line-height:30px;
+  padding-top:30px;
+  line-height:25px;
+  padding:20px;
+}
+
+form {
+  padding:0px;
 }
 
 /* Sets properties for footer */
