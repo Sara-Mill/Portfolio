@@ -131,7 +131,6 @@ footer {
 @media screen and (max-width: 992px) {
   .content {
     width:80%;
-    padding:45px;
   }
 }
 /* Sets responsiveness for large smartphones */
@@ -139,7 +138,7 @@ footer {
  
   /* Extends header to full width of page */
   header {
-    width:200%;
+    width:100%;
   }
 
   /* Eliminates white space on right side of screen */
@@ -152,7 +151,7 @@ footer {
   }
 
   footer {
-    width:200%;
+    width:100%;
     text-align:left;
   }
 }
@@ -160,7 +159,7 @@ footer {
 /* Sets resposiveness for small smartphones */
 @media screen and (max-width: 576px) {
   header {
-    width:350%;
+    width:100%;
   }
 
   body{
@@ -172,10 +171,10 @@ footer {
     text-align:left;
   }
   .card {
-    width:750px;
+    width:100%;
     flex-direction:row;
     justify-content:center;
-    padding-right:105px;
+    padding-right:0px;
     margin-right:0px;
     margin-left:0px;
     padding-top:45px;
@@ -184,10 +183,10 @@ footer {
 
   .content .contact {
     width:100%;
-    padding:45px;
+    padding:0px;
   }
 
   footer {
-    width:350%;
+    width:100%;
   }
 }
