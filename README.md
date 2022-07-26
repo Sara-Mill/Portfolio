@@ -15,5 +15,4 @@ There are images of my applications, as well as placeholders of future projects.
 
 When the user resizes the page or views from a mobile device, then are presented with a responsive layout that adapts to the viewport.
 
-(Screenshot%20As%20Viewed%20on%20a%20Mobile%20Device.png)")
 ![alt text] "![Screenshot as viewed on a mobile device]"
