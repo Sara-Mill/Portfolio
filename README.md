@@ -5,7 +5,7 @@ This is a webpage I made to display my portfolio of work.
 When the user resizes the page or views from a mobile device, then are presented with a responsive layout that adapts to the viewport.
 
 
-![Screenshot As Viewed on a Mobile Device](https://user-images.githubusercontent.com/106774866/180908961-f345da6b-019a-4b35-89a6-9cdd6f05efcb.png)
+![Screenshot As Viewed on a Mobile Device](/images//user-images.githubusercontent.com/106774866/180908961-f345da6b-019a-4b35-89a6-9cdd6f05efcb.png)
 
 
 The page includes my name and a recent photo of me.
